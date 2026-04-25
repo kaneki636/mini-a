@@ -7,7 +7,7 @@
     --text: #ffffff;
 }
 
-/* EL CAMBIO CLAVE: Aplicamos el fondo directamente aquí */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -21,10 +21,7 @@ body, html {
     background-size: cover;
 }
 
-/* Si decides dejar el div .background-overlay, asegúrate de que no tenga fondo */
-.background-overlay {
-    display: none; /* Lo ocultamos para que no estorbe */
-}
+
 
 .content {
     padding: 20px;
@@ -34,7 +31,7 @@ body, html {
     min-height: 100vh;
 }
 
-/* Para que las tarjetas resalten sobre el nuevo fondo vino */
+/* Para que las tarjetas resalten sobre el fondo  */
 .card, .time-block, .message-box {
     background: rgba(255, 255, 255, 0.08); /* Un poco más transparente */
     backdrop-filter: blur(15px);
@@ -42,7 +39,7 @@ body, html {
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Hero Section Mejorada */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -73,7 +70,7 @@ body, html {
     filter: drop-shadow(0 0 10px var(--accent));
 }
 
-/* Contador con estilo Glassmorphism más pulido */
+
 .countdown {
     display: flex;
     gap: 20px;
@@ -111,7 +108,7 @@ body, html {
     opacity: 0.7;
 }
 
-/* Galería de Tarjetas Estilizada */
+
 .gallery { 
     padding: 100px 0; 
     width: 100%; 
@@ -172,7 +169,7 @@ body, html {
 }
 
 .video-card {
-    grid-column: span 2; /* Puedes usar 'span 2' si quieres que el video sea más grande que las otras fotos */
+    grid-column: span 2; 
     position: relative;
 }
 
@@ -183,7 +180,7 @@ body, html {
     display: block;
 }
 
-/* Efecto opcional: un ligero brillo para que el video resalte como "especial" */
+/* efecto ligero brillo para que el video resalte como "especial" */
 .video-card:hover {
     border-color: var(--accent);
     box-shadow: 0 0 20px rgba(255, 77, 109, 0.4);
@@ -246,7 +243,7 @@ button:hover {
     box-shadow: 0 8px 25px var(--accent);
 }
 
-/* Lluvia de Te Amos (Contenedor pantalla completa) */
+/* Lluvia de Te Amo*/
 #love-rain-container {
     position: fixed; /* Fijo en la pantalla, no se mueve con el scroll */
     top: 0; 
@@ -270,18 +267,18 @@ button:hover {
 
 @keyframes fall {
     0% {
-        transform: translateY(0); /* Empieza en la posición top asignada en JS */
+        transform: translateY(0); 
         opacity: 0;
     }
     10% {
-        opacity: 1; /* Aparece rápido */
+        opacity: 1;
     }
     90% {
         opacity: 1;
     }
     100% {
-        transform: translateY(110vh); /* Cae un poco más allá de la pantalla */
-        opacity: 0; /* Desaparece al final */
+        transform: translateY(110vh); 
+        opacity: 0; 
     }
 }
 
